@@ -1,11 +1,55 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3a6d953e97293f87d1f0b3e0bcddb994",
+    "hash": "ff2443ad63b836b5e27554ce7e4359af",
     "packages": [
+        {
+            "name": "mos/cform",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/cform.git",
+                "reference": "0e8a31d135a06b72f29abe9df21c09566344d3f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/cform/zipball/0e8a31d135a06b72f29abe9df21c09566344d3f5",
+                "reference": "0e8a31d135a06b72f29abe9df21c09566344d3f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Classes for HTML Forms",
+            "homepage": "http://dbwebb.se/",
+            "keywords": [
+                "Forms",
+                "education",
+                "html"
+            ],
+            "time": "2015-05-20 11:57:09"
+        },
         {
             "name": "phpmvc/comment",
             "version": "dev-master",
@@ -54,7 +98,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phpmvc/comment": 20
+        "phpmvc/comment": 20,
+        "mos/cform": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
