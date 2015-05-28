@@ -1,0 +1,124 @@
+/**
+ * General elements
+ */
+
+body {
+  color: #333;
+  font-family: arial, sans-serif;
+  overflow-y: scroll;
+  margin:0px;
+}
+
+h1 {
+  text-align:center;
+  font-size: 30px;
+}
+
+
+/**
+ * Layout of the main page elements
+ */
+#wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+
+}
+
+
+#sitePic {
+  width:150px;
+  height:150px;
+  background-image:url("../../img/anax.png");
+  background-size:100%;
+  float:left;
+}
+#siteTitle {
+  width:680px;
+  height:100px;
+  text-align:center;
+  line-height: 100px;
+  font-size: 48px;
+  float:left;
+
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+  width:980px;
+  min-height:100px;
+}
+
+/**
+ * Layout for footer
+ */
+#footer {
+  border-top: 1px solid #ccc;
+  padding-top:20px;
+  text-align:center;
+  margin-top:50px;
+}
+
+
+#header,
+#navbar,
+#flash,
+#footer {
+    .column(@columns);
+	margin-bottom: 22px;
+}
+
+#main {
+	.column(@columns / 3 * 2);
+	margin-bottom: 22px;
+}
+
+#sidebar {
+    .column(@columns / 3);
+	margin-bottom: 22px;
+
+}
+
+#featured-1,
+#featured-2,
+#featured-3,
+#triptych-1,
+#triptych-2,
+#triptych-3 {
+    .column(@columns / 3);
+	margin-bottom: 22px;
+}
+
+#footer-col-1,
+#footer-col-2,
+#footer-col-3,
+#footer-col-4 {
+    .column(@columns / 4);
+	margin-bottom: 22px;
+}
+
+#wrap-featured,
+#wrap-main,
+#wrap-triptych,
+#wrap-footer-col {
+    .clearfix();
+}
+
+#flash,
+#main,
+#sidebar,
+#featured-1,
+#featured-2,
+#featured-3,
+#triptych-1,
+#triptych-2,
+#triptych-3,
+#footer-col-1,
+#footer-col-2,
+#footer-col-3,
+#footer-col-4
+{
+	min-height:30px;
+}
