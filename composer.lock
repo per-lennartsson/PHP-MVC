@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff2443ad63b836b5e27554ce7e4359af",
+    "hash": "e037bc2350e7d1284961549e57dd2ffe",
     "packages": [
+        {
+            "name": "mos/cdatabase",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/cdatabase.git",
+                "reference": "5746aa83f062321f8f9016f0bc57a6c0e65300fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/cdatabase/zipball/5746aa83f062321f8f9016f0bc57a6c0e65300fb",
+                "reference": "5746aa83f062321f8f9016f0bc57a6c0e65300fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP classes for database handling upon PDO",
+            "homepage": "http://dbwebb.se",
+            "keywords": [
+                "education",
+                "framework",
+                "micro",
+                "module",
+                "mvc"
+            ],
+            "time": "2015-03-13 15:36:43"
+        },
         {
             "name": "mos/cform",
             "version": "2.x-dev",
@@ -99,6 +145,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "phpmvc/comment": 20,
+        "mos/cdatabase": 20,
         "mos/cform": 20
     },
     "prefer-stable": false,
