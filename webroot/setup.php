@@ -211,13 +211,13 @@ $app->router->add('', function() use ($app) {
     ]);
 
     // Create question2movie and insert default values
-    $sql = "CREATE TABLE kmom10_question_tag
+    $sql = "CREATE TABLE anax_question_tag
     (
       question_id INT NOT NULL,
       tag_id INT NOT NULL,
 
-      FOREIGN KEY (question_id) REFERENCES kmom10_question (id),
-      FOREIGN KEY (tag_id) REFERENCES kmom10_tag (id),
+      FOREIGN KEY (question_id) REFERENCES anax_question (id),
+      FOREIGN KEY (tag_id) REFERENCES anax_tag (id),
 
       PRIMARY KEY (question_id, tag_id)
     );";
