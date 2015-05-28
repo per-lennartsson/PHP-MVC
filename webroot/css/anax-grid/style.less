@@ -25,12 +25,60 @@
 // Font Awesome
 @import "font-awesome-4.3.0/less/font-awesome.less";
 
-#wrapper {
-    background-image: url(grid_12_60_20.png);
+#wrapper 
+{
+
 }
 
-.tags{
-    color: white;
+.tags, .users, .question{
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+}
+
+.tags
+{
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+}
+
+.tags a,
+.users a,
+.question a
+{
+   display: block;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   width: 100%;
+   text-decoration: none;
+   text-decoration: underline;
+   color: Black;
+}
+
+.fa-6x
+{
+	font-size: 12em;
+}
+
+.wrap
+{
+border: solid grey;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 15px;
+}
+
+.wrap a
+{
+    text-decoration: none;
+    text-decoration: underline;
+    color: Black;
+}
+
+.box
+{
     width: 20%;
     display: inline-block;
 }
+
